@@ -112,6 +112,9 @@ export class ListNode extends ElementNode {
     }
     return this;
   }
+  extractWithChild(child: LexicalNode): boolean {
+    return $isListItemNode(child);
+  }
 }
 
 function setListThemeClassNames(
